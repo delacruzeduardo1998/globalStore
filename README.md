@@ -1,0 +1,2 @@
+# globalStore
+App store local
