@@ -6,15 +6,13 @@ import { AppComponent } from './app.component';
 import { Materialmodule } from './material.module';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DominicodeComponent } from './page/dominicode/dominicode.component';
 import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    DominicodeComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DominicodeComponent } from './page/dominicode/dominicode.component';
 
 const routes: Routes = [
-  {path: 'dominicode', component: DominicodeComponent}
+  { path: 'products', loadChildren: () => import('./page/products/products.module').then(m => m.ProductsModule) },
+  {path: '**', redirectTo: '', pathMatch: 'full'}
 ]
 
 @NgModule({
